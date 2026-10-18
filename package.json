@@ -1,0 +1,26 @@
+{
+  "name": "typescript-wizard-lab",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test tests",
+    "test:day-01": "bun test tests/day-01",
+    "test:day-02": "bun test tests/day-02",
+    "test:day-03": "bun test tests/day-03",
+    "test:day-04": "bun test tests/day-04",
+    "test:day-05": "bun test tests/day-05",
+    "test:day-06": "bun test tests/day-06",
+    "test:day-07": "bun test tests/day-07",
+    "test:watch": "bun test --watch tests",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun run test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
